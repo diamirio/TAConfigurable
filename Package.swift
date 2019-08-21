@@ -13,13 +13,15 @@ let package = Package(
     targets: [
         .target(
             name: "TAConfigurable",
-            dependencies: []
+            dependencies: [],
+            path: "TAConfigurable"
         ),
         .testTarget(
             name: "TAConfigurableTests",
             dependencies: [
                 "TAConfigurable"
-            ]
+            ],
+            path: "TAConfigurableTests"
         )
     ]
-)^
+)
